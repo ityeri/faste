@@ -102,7 +102,7 @@ class TextBox(Element):
                     (self.surface.get_width() - textSurface.get_width(), lineHeight*i)
                 )
 
-        self.rect = Rect(
+        self.rect = UIRect(
             (self.x, self.y, globalWidth, globalHeight), 
             AlignType.toRectType(self.alignType)
         )

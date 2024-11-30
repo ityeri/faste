@@ -4,8 +4,6 @@ from typing import *
 from rect import *
 from abc import ABC
 
-# TODO : 프젝 구조 뜯어 고치기 함
-
 
 
 class Element(ABC):
@@ -14,7 +12,6 @@ class Element(ABC):
         self.rect: Rect
         self.isVisible = isVisible
 
-    
     def draw(self, surface: pygame.Surface): 
         '''
         UI 객체를 그릴때 scene 에서 호출하는 함수

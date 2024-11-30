@@ -3,8 +3,9 @@ from element import Element
 from SupportTypes import *
 from rect import *
 from math import *
+from rect import Rect
 
-class Rect(Element):
+class UIRect(Element):
     def __init__(self, 
                  elementId: str, 
                  color: ColorValue,

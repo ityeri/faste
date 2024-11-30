@@ -3,9 +3,7 @@ import os
 import pygame
 import sys
 
-parent_dir = os.path.dirname(os.path.abspath(__file__))
-grandparent_dir = os.path.dirname(parent_dir)
-sys.path.append(grandparent_dir)
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import __init__ as faste
 
@@ -14,10 +12,10 @@ pygame.init()
 
 testScene = faste.Scene()
 
-testRect1 = faste.element.Rect("1", (0, 0, 255), (10, 10, 100, 100),
+testRect1 = faste.element.UIRect("1", (0, 0, 255), (10, 10, 100, 100),
                               borderRadius=20)
 
-testRect2 = faste.element.Rect("2", (0, 255, 0), (11, 11, 100, 100),
+testRect2 = faste.element.UIRect("2", (0, 255, 0), (11, 11, 100, 100),
                               borderRadius=20)
 
 testScene.addElement(testRect1)
