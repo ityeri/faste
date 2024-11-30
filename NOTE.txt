@@ -1,0 +1,6 @@
+class UIflowManager:
+    init:
+        클럭, fps, dt 설정
+        스크린 설정, 그외 파이게임 설정...
+
+        그그 ㅝ냔그 그 있잖아그 뭐 아 UImanager 설정
